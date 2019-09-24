@@ -1,1 +1,2 @@
 config.ini.ignore
+.venv/pyvenv.cfg
