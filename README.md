@@ -69,5 +69,11 @@ There is no need for quotes, however an equal sign "=" is required between the k
 
 Sections are used in the config.ini to group settings.
 
+Start by creating a TExt Analytics cognitive service in the Azure Portal:
+https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics
+
+Continue from script "01. Sentiment One Call.py"
+
+
 
 
