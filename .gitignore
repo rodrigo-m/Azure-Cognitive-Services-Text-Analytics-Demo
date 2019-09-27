@@ -1,3 +1,4 @@
 config.ini.ignore
 .venv/
 .vscode/settings.json
+config.ini
