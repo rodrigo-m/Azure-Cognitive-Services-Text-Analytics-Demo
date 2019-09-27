@@ -17,7 +17,7 @@ access_key = config.get('text-analytics', 'access_key')
 endpoint = config.get('text-analytics', 'endpoint')
 
 # Connect to SQL Server
-conn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
+conn = pyodbc.connect("Driver={SQL Server};"
                       "Server=" + config.get('database', 'server') + ";"
                       "Database=" + config.get('database', 'db_name') + ";"
                       "UID=" + config.get('database', 'user_name') + ";"

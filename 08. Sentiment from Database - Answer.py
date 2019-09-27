@@ -22,7 +22,7 @@ user_name = config.get('database', 'user_name')
 user_password = config.get('database', 'user_password')
 
 # Build a connection object to  Connect to SQL Server 
-conn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
+conn = pyodbc.connect("Driver={SQL Server};"
                       "Server=" + config.get('database', 'server') + ";"
                       "Database=" + config.get('database', 'db_name') + ";"
                       "UID=" + config.get('database', 'user_name') + ";"

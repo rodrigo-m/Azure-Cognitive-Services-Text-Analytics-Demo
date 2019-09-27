@@ -18,7 +18,7 @@ endpoint = config.get('text-analytics', 'endpoint')
 
 # Build a connection object to  Connect to SQL Server 
 # TODO: adjust the config.ini with the connection settings for your database
-conn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
+conn = pyodbc.connect("Driver={SQL Server};"
                       "Server=" + config.get('database', 'server') + ";"
                       "Database=" + config.get('database', 'db_name') + ";"
                       "UID=" + config.get('database', 'user_name') + ";"
