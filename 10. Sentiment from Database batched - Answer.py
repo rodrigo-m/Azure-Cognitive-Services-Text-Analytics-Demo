@@ -18,9 +18,11 @@ endpoint = config.get('text-analytics', 'endpoint')
 
 # Connect to SQL Server
 conn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
-                      "Server=MININT-RB17R7E\SQL1;"
-                      "Database=AirBnBSanFrancisco;"
-                      "Trusted_Connection=yes;")
+                      "Server=" + config.get('database', 'server') + ";"
+                      "Database=" + config.get('database', 'db_name') + ";"
+                      "UID=" + config.get('database', 'user_name') + ";"
+                      "PWD=" + config.get('database', 'user_password') + ";"
+                      "Trusted_Connection=no;")
 
 batch_size = 30
 last_id = 0

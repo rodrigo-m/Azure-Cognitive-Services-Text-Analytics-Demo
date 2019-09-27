@@ -1,5 +1,5 @@
 # Azure Cognitive Services Text Analytics Demo
-Python scripts to connect to Azure Text Analytics and extract Sentiment, Key Phrases, and Entities. 
+Python scripts to connect to Azure Text Analytics and extract Sentiment, Key Phrases, and Entities. Instructions are tested for VS Code running on Windows 10.
 
 In this tutorial you will learn:
 1. How to create a cognitive services endpoint for Text Analytics in Azure.
@@ -16,29 +16,41 @@ In this tutorial you will learn:
     Get a free one here: https://azure.microsoft.com/en-us/free/search/ 
 3. Connectivity to Azure cognitive services endpoints (https)
 4. Python pre-requisites
-4.1 Download and install Python for Windows
+
+4.1. Download and install Python for Windows
     https://www.python.org/downloads/
-    We are using version 3.7.4
+    Tutorial scripts tested with version 3.7.4
+
 4.2. Install Python extension on VS Code
     https://marketplace.visualstudio.com/items?itemName=ms-python.python
+
 4.3. Select a Python Interpreter
     Click on the lower left corner of VS Studio, select Python 3.7.x
 For Additional details on Python installation and configuration, follow:
     https://code.visualstudio.com/docs/python/python-tutorial
+
 4.4. Create and activate a Python environment in VS Code
     Ctrl+Shift+ to go to the Python terminal within VS Code, then run three commands:
-    py -3 -m venv .venv
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-    .venv\scripts\activate
+        py -3 -m venv .venv
+        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+        .venv\scripts\activate
+
 5. Install the Cognitive Services SDK
     Ctrl+Shift+ to go to the Python terminal
-    python -m pip install azure-cognitiveservices-language-textanalytics --user
-6. Download the scripts for the tutorial from GitHub:
+        python -m pip install azure-cognitiveservices-language-textanalytics --user
+6. Install required Python libraries
+     Ctrl+Shift+ to go to the Python terminal
+        python -m pip install pyodbc
+        python -m pip install pandas
+        python -m pip install configparser
+6. Install the ODBC driver for windows (for SQL connectivity)
+    https://www.microsoft.com/en-us/download/details.aspx?id=56567
+7. Download the scripts for the tutorial from GitHub:
         https://github.com/rodrigo-m/Azure-Cognitive-Services-Text-Analytics-Demo
         the click on "Clone or Download" then click "Download ZIP"
     if you have Git installed in your machine and have familiarity with Git you can clone the repository to a local drive:
       git clone https://github.com/rodrigo-m/Azure-Cognitive-Services-Text-Analytics-Demo.git
-7. Open the folder where you saved the scripts from VS Code 
+8. Open the folder where you saved the scripts from VS Code 
     File --> Open Folder...
 
 

@@ -23,10 +23,10 @@ user_password = config.get('database', 'user_password')
 
 # Build a connection object to  Connect to SQL Server 
 conn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
-                      "Server=" + server + ";"
-                      "Database=" + db_name + ";"
-                      "UID=" + user_name + ";"
-                      "PWD=" + user_password + ";"
+                      "Server=" + config.get('database', 'server') + ";"
+                      "Database=" + config.get('database', 'db_name') + ";"
+                      "UID=" + config.get('database', 'user_name') + ";"
+                      "PWD=" + config.get('database', 'user_password') + ";"
                       "Trusted_Connection=no;")
 
 # Build the query to retrieve documents from the database
