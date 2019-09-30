@@ -51,7 +51,7 @@ For Additional details on Python installation and configuration, follow:
     if you have Git installed in your machine and have familiarity with Git you can clone the repository to a local drive:
       git clone https://github.com/rodrigo-m/Azure-Cognitive-Services-Text-Analytics-Demo.git
 8. Open the folder where you saved the scripts from VS Code 
-    File --> Open Folder...
+    File --> Open Folder... --> browse to "python" folder within the repo.
 
 
 # Tutorial steps
