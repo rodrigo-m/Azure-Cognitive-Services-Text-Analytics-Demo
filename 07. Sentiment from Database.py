@@ -26,7 +26,7 @@ conn = pyodbc.connect("Driver={SQL Server};"
                       "Trusted_Connection=no;")
 
 # Build the query to retrieve documents from the database
-# TODO: try the script with the query below, which will get 20 recprds. If it works, modify  
+# TODO: try the script with the query below, which will get 20 records. If it works, modify  
 #       the query so that (1) it selects only records that have a NULL sentiment_score 
 #       and (2) the number of records sent to the text analytics service is controlled 
 #       by a variable. 
