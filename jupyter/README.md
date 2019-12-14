@@ -10,15 +10,13 @@ In this tutorial you will learn:
 
 ## Pre-requisites
 1. Create an Azure Machine Learning Workspace and a 
-    Follow the instrucions on the page below only, stop at "Next Steps"
+    Follow the instrucions on the page below only, stop at "Clone a Notebook Folder"
     https://docs.microsoft.com/en-us/azure/machine-learning/service/tutorial-1st-experiment-sdk-setup   
 2. Clone the repository with ipynb notebooks
     Launch Jupyter notebooks from the Azure Machine Learning Workspace
-    Fromt he top left of your screen, click New --> Terminal 
-    From the terminal prompt go to the directory you would like to copy the files to
-    Type the command below:
-      git clone https://github.com/rodrigo-m/Azure-Cognitive-Services-Text-Analytics-Demo.git
-    Close the browser tab with the terminal window
+    Create a notebook and type the command below in the first cell:
+      !git clone https://github.com/rodrigo-m/Azure-Cognitive-Services-Text-Analytics-Demo.git
+    Verify that you can see the cloned folder 
 3. Install required Python libraries
     Open the folder Azure-Cognitive-Services-Text-Analytics-Demo
     Open the folder "jupyter"
